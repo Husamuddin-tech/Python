@@ -1,0 +1,10 @@
+class parent:
+    def m(self):
+        print("This is Parent Class")
+class child(parent):
+    def n(self):
+        print("This is Child Class")
+
+obj=child()
+obj.m()
+obj.n()
