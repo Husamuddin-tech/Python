@@ -1,0 +1,7 @@
+li=[10,15,15,20,10,12,13,10]
+di=[]
+print(li)
+for i in li :
+  if i not in di:
+    di.append(i)
+print("Elements Eith Unique Numbers :",di)
