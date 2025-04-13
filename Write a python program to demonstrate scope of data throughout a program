@@ -1,0 +1,33 @@
+#Local scope
+def myfunc():
+    x=300
+    print("The value of x",x)
+myfunc()
+
+def outerfunc():
+    x=234
+    def innerfunc():
+        print("The value of outer function is",x)
+    innerfunc()
+outerfunc()
+
+#Global scope
+x=123
+def data():
+    x=345
+    print("Data inside the function",x)
+data()
+print("Data outside the function",x)
+
+def globalscope():
+    global x
+    x=567
+globalscope()
+print("The value is inside the function")
+
+y=86463
+def func():
+    global y
+    y=356
+func()
+print("The value  of x after using global keyword",y)
