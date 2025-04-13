@@ -1,0 +1,21 @@
+my_dict={
+     'name':'husam',
+     'roll':7020,
+     'branch':'aids',
+     'section':'a'
+}
+print('the dictionary: ',dict)
+print('copy method: ',my_dict.copy())
+print('fromkeys method: ',my_dict.fromkeys('name','husam'))
+print('get method: ',my_dict.get('branch'))
+print('items method: ',my_dict.items())
+print('keys method: ',my_dict.keys())
+print('pop method: ',my_dict.pop('section'))
+print('popitem method: ',my_dict.popitem())
+print('setdefault method: ',my_dict.setdefault('name'))
+print('update method: ',my_dict.update({'branch':'cse'}))
+print('after update: ',my_dict)
+print('values method: ',my_dict.values())
+print('clear method: ',my_dict.clear())
+print('after clear; ',my_dict)
+
