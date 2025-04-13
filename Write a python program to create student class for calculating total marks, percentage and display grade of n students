@@ -1,0 +1,43 @@
+class Student:
+    def __init__(self):
+        self.name = input("Enter Your Name: ")
+        self.maths = float(input("Enter Your Maths Marks: "))
+        self.python = float(input("Enter Your Python Marks: "))
+        self.c = float(input("Enter Your C Marks: "))
+        self.ds = float(input("Enter Your DS Marks: "))
+        self.java = float(input("Enter Your Java Marks: "))
+
+    def total(self):
+        t = self.maths + self.python + self.c + self.ds + self.java
+        return t
+
+    def percentage(self):
+        total_marks = self.total()
+        percentage = (total_marks / 500) * 100  
+        print("Percentage of Student:", percentage, "%")
+        if percentage >= 90:
+            return 'A'
+        elif percentage >= 80:
+            return 'B'
+        elif percentage >= 70:
+            return 'C'
+        elif percentage >= 60:
+            return 'D'
+        else:
+            return 'F'
+
+num_students = int(input("Enter the number of students: "))
+
+students = []
+
+for _ in range(num_students):
+    student = Student()
+    students.append(student)
+
+for student in students:
+    print("\nStudent Name:", student.name)
+    total_marks = student.total()
+    print("Total Marks Of student:", total_marks)
+    grade = student.percentage()
+    print("Final Grade:", grade)
+
