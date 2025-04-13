@@ -1,0 +1,10 @@
+tu=("hello","world","python","c","dataStructues")
+print("Tuple:",tu)
+li=list(tu)
+li[1]=7008
+modify=tuple(li)
+print("Modified Tuple :",modify)
+li.remove("python")
+remove=tuple(li)
+print("After Removing 'Python':",remove)
+
