@@ -1,0 +1,11 @@
+n = int(input("Enter the value:"))
+for i in range(n):
+    j = int(input("enter a no:"))
+    if i==0:
+        max=min=j
+    if j>max:
+        max=j
+    if j<min:
+        min=j
+print("the smallest is:",min)
+print("the largest is:",max)
