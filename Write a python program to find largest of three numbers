@@ -1,0 +1,12 @@
+a = int(input("Enter A value: "))
+b = int(input("Enter B value: "))
+c = int(input("Enter C value: "))
+if a>b and a>c:
+    print(a," is the largest value")
+elif a<b and b>c:
+    print(b," is the largest value")
+elif a<c and b<c:
+    print(c," is the largest value")
+else:
+    print("A=B=C")
+
