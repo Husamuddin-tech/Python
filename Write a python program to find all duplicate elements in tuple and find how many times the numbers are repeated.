@@ -1,0 +1,10 @@
+tu=(1,56.56,2,2,12,2,3,45,56,4,3,1,56,4,12,34,53,55,32,9)
+li=[]
+print("Tuple :",tu)
+for i in tu :
+    if i not in li :
+        count = tu.count(i)
+        if count>1 :
+            print(i,"is Repeated",count,"times")
+        li.append(i)
+
