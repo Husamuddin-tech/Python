@@ -1,0 +1,33 @@
+class Shape:
+    def __init__(self, color):
+        self.color = color
+
+    def display_color(self):
+        return f"The shape is {self.color}."
+
+class Circle(Shape):
+    def __init__(self, color, radius):
+        super().__init__(color)
+        self.radius = radius
+
+    def display_info(self):
+        return f"This is a {self.color} circle with radius {self.radius}."
+
+class Square(Shape):
+    def __init__(self, color, side_length):
+        super().__init__(color)
+        self.side_length = side_length
+
+    def display_info(self):
+        return f"This is a {self.color} square with side length {self.side_length}."
+
+
+red_circle = Circle("red", 5)
+blue_square = Square("blue", 4)
+
+
+print(red_circle.display_color())  
+print(red_circle.display_info())   
+
+print(blue_square.display_color())  
+print(blue_square.display_info())
