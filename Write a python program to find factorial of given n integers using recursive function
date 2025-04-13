@@ -1,0 +1,13 @@
+def fact(n):
+    if n==1:
+        return n
+    else:
+        return n*fact(n-1)
+while True:
+    n=int(input('enter number: '))
+    fact(n)
+    print('the factorial of ',n,'is',fact(n))
+    a=input('e to exit\n')
+    if a=='e':
+        break
+
