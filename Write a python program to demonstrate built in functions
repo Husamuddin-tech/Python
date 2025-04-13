@@ -1,0 +1,33 @@
+print('\n1. abs() : Functions returns the absolute value')
+print(abs(-87))
+
+print('\n2. all() :Functions return if all elements are True')
+print(all(['True',1,'Yes']))
+
+print('\n3. any(): Functions return if any value is True..')
+print(any(['False', 0, 'no']))
+
+print('\n4. ascii(): Functions return with a strings..')
+print(ascii('Hello'))
+
+print('\n5. bin(): Functions return a binary string..')
+print(bin(43))
+
+print('\n6. chr(): Functions return a string character..')
+print(chr(65))
+
+print('\n7. dict(): Functions create a new dictionary..')
+print(dict([('a',1), ('b',2)], c=3))
+
+print('\n8. bool(): Functions return True if the value is True...')
+print(bool(34))
+
+print('\n9. divmod(): Functions return a paired didvsion value..')
+print(divmod(30,12))
+
+print('\n10. bytes(): Functions return a new byte object...')
+print(bytes('Hello','utf-8'))
+
+print('\n11. complex(): Functions convert a string into complex number..')
+print('1+2j')
+
