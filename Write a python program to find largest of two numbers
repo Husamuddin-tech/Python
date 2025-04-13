@@ -1,0 +1,6 @@
+a = int(input("Enter the Value: "))
+b =int(input("Enter the value: "))
+if a>b:
+    print("The Largest no is: ",a)
+else:
+    print("The Largest no is: ",b)
