@@ -1,0 +1,17 @@
+from abc import ABC,abstractmethod
+class Shape(ABC):
+    @abstractmethod
+    def draw(self):
+        "Abstract method"
+        return
+class Circle(Shape):
+    def draw(self):
+        super().draw()
+        print("Draw a Circle")
+class Rectangle(Shape):
+    def draw(self):
+        super().draw()
+        print("Draw a Rectangle")
+shapes=[Circle(),Rectangle()]
+for shape in shapes:
+    shape.draw()
