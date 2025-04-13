@@ -1,0 +1,22 @@
+#for method overriding
+class parent:
+    print("Calling parent class")
+class child(parent):
+    def myMethod(self):
+        print("Calling child class")
+c=child()
+c.myMethod()
+
+#for method overloading
+class example:
+    def add(self,a=None,b=None,c=None):
+        x=0
+        if a!=None and b!=None and c!=None:
+            x=a+b+c
+        elif a!=None and b!=None and c==None:
+            x=a+b
+        return x
+        
+o=example()
+print(o.add(10,20,30))
+print(o.add(20,30))
