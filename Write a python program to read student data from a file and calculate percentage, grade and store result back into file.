@@ -1,0 +1,24 @@
+student=open("demofile.txt","r")
+r=student.readlines()
+student.close()
+s1=[]
+for i in r:
+    i=i.strip("\n")
+    if i.isdigit():
+        i=int(i)
+        s1.append(i)
+percentage=(sum(s1)/(len(s1)*100))*100
+j=""
+if percentage>80 and percentage<=100:
+    j=j+"GRADE A"
+elif percentage>65 and percentage<=80:
+    j=j+"GRADE B"    
+elif percentage>55 and percentage<=65:
+    j=j+"GRADE C"  
+elif percentage>40and percentage<=55:
+    j=j+"GRADE D"    
+else:
+    j=j+"GRADE F"
+student=open("demofile.txt","a") 
+j=student.write(f"PERCENTAGE:{percentage} \nGRADE:{j}")
+student.close()
