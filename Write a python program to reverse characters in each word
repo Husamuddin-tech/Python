@@ -1,0 +1,8 @@
+l=str(input("Enter words :> "))
+rev=""
+m=l.split()
+for i in m :
+    i=i[::-1]
+    rev+=i+" "
+print("The Words After Reserving :>",rev)
+
