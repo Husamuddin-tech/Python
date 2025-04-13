@@ -1,0 +1,14 @@
+#first
+a = 45
+print(float(a))
+b = 1.987
+print(int(b))
+print(str(b))
+
+
+#second
+c = 5
+d = 6.7
+total = c+d
+
+print(total,"is the type of: ",type(total))
