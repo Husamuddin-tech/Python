@@ -1,0 +1,20 @@
+#Example 1
+class class1:
+    def m(self):
+        print("In Class1")
+class class2:
+    def m(self):
+        print("In Class2")
+class class3:
+    def m(self):
+        print("In Class3")
+class class4(class2,class3):
+    pass
+obj=class4()
+obj.m()
+#Example 2
+class class4(class2,class3):
+    def m(self):
+        print("In Class4")
+obj=class4()
+obj.m()
