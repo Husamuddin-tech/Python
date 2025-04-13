@@ -1,0 +1,25 @@
+class shape:
+    def __init__(self,radius,breadth,length,side):
+        self.radius=radius
+        self.length=length
+        self.breadth=breadth
+        self.side=side
+    def circle(self):
+        print('area of circle is: ',3.14*self.radius**2)
+    def rectangle(self):
+        print('area of rectangle is: ',self.length*self.breadth)
+    def triangle(self):
+        print('area of triangle is : ',0.5*self.length*self.breadth)
+    def square(self):
+        self.side=side
+        print('area of square is: ',self.side**2)
+radius=float(input('enter radius: '))
+length=float(input('enter length: '))
+breadth=float(input('enter breadth: '))
+side=float(input('enter side: '))
+c=shape(radius,length,breadth,side)
+c.circle()
+c.rectangle()
+c.triangle()
+c.square()
+
