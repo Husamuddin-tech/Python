@@ -1,0 +1,17 @@
+tu=(7008,"python",93.7,"hello",12,85)
+print("Tuple :",tu)
+Nested=("python",{"Hello World",10},(23,"c"),["data structues","Html"])
+print("Nested Tuple :",Nested)
+pare='hello','world','python',25,7008,3.14
+print("Tuple Without Using Parentheses :",pare)
+single=("Ai&Ds",)
+print("Single Element Tuple :",single,type(single))
+print("Tuple :",tu)
+print("Indexing 1:",tu[1])
+print("Negative Indexing [-1] :",tu[-1])
+print("Slicing [-4:-1] :",tu[-4:-1])
+print("Iterating in Tuple :")
+for i in tu :
+    print(i)
+if "python" in tu :
+    print("Yes 'python' is in tuple")
