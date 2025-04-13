@@ -1,0 +1,13 @@
+n=int(input('enter no of inputs: '))
+even=0
+odd=0
+i=1
+while i<=n:
+    a=int(input('enter a value: '))
+    if a%2==0:
+        even+=a
+    if a%2!=0:
+        odd+=a
+    i+=1
+print('the sum of odd numbers: ',odd)
+print('the sum of even numbers: ',even)
