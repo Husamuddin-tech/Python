@@ -1,0 +1,63 @@
+# arithmetic operators
+a=int(input('enter a number:'))
+b=int(input("enter a number:"))
+print('addition',a+b)
+print('subtraction',a-b)
+print('multiplication',a*b)
+print('division',a/b)
+print("modular division",a%b)
+print('exponentiation',a**b)
+print('floor division',a//b)
+# comparison operators
+print('equals to: ',a--b)
+print('less than: ',a<b)
+print('greater than: ',a>b)
+print('less than or equal to: ',a<=b)
+print('greater than or equal to: ',a>=b)
+print("not equal to: ",a!=b)
+# assignment operators
+a=b
+print('equals to',a)
+a+=b
+print('add and equal to',a)
+a-=b
+print('subtract and equal to',a)
+a*=b
+print("multiply and equal to",a)
+a/=b
+print('divide and equal to',a)
+a**=b
+print('square and equal to',a)
+a=10
+b=9
+a&-b
+print('and equal to',a)
+a|=b
+print('or equal to',a)
+a=~b
+print('negation equal to',a)
+a%-b
+print("modular division equal to",a)
+a//-b
+print("floor and equal to",a)
+a<<b
+print('left shift equal to',a)
+a>>b
+print('right shift equal to',a)
+# logical operators
+print(a>b and a<b)
+print(a>b or a<b)
+print(a>b is not a<b)
+#identity operators
+print(a is b)
+print(a is not b)
+#membership operators
+days=['monday', 'tuesday', 'wednesday']
+print('sunday' in days)
+# bitwise operators
+print('logical and',a&b)
+print("logical or",a|b)
+print('logical not',~a)
+print("left shift",a<<1)
+print("right shift",a>>2)
+print('exclusive or',a^b)
