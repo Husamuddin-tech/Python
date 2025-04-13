@@ -1,0 +1,49 @@
+class Vehicle:
+    def __init__(self, brand):
+        self.brand = brand
+
+    def display_info(self):
+        print(f"Brand: {self.brand}")
+
+class EngineMixin:
+    def __init__(self, fuel_type):
+        self.fuel_type = fuel_type
+
+    def display_engine_info(self):
+        print(f"Fuel type: {self.fuel_type}")
+
+class Car(Vehicle, EngineMixin):
+    def __init__(self, brand, model, fuel_type):
+        Vehicle.__init__(self, brand)
+        EngineMixin.__init__(self, fuel_type)
+        self.model = model
+
+    def display_info(self):
+        super().display_info()
+        print(f"Model: {self.model}")
+        super().display_engine_info()
+
+class ElectricBike(Vehicle, EngineMixin):
+    def __init__(self, brand, model):
+        Vehicle.__init__(self, brand)
+        EngineMixin.__init__(self, fuel_type="Electric")
+        self.model = model
+
+    def display_info(self):
+        super().display_info()
+        print(f"Model: {self.model}")
+        super().display_engine_info()
+
+class HybridCar(Car):
+    def __init__(self, brand, model):
+        super().__init__(brand, model, fuel_type="Hybrid")
+
+
+car = Car(brand="Toyota", model="Camry", fuel_type="Gasoline")
+car.display_info()
+
+electric_bike = ElectricBike(brand="Tesla", model="Model S")
+electric_bike.display_info()
+
+hybrid_car = HybridCar(brand="Toyota", model="Prius")
+hybrid_car.display_info()
