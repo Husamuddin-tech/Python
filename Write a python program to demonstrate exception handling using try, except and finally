@@ -1,0 +1,36 @@
+#try and except
+a = ("python","Exceptions","try and except")
+try:
+    for i in range(4):
+        print("the index and the element from the array is:",i,a[i])
+except:
+    print("Index out of range")
+    
+#try , Except and else
+try:
+    num = int(input("Enter a num:"))
+    assert num%2==0
+except:
+    print("Not a even number")
+else:
+    reciprocal=1/num
+    print(reciprocal)
+#try and except finally
+try:
+    numb=10
+    den=2
+    result=num/den
+    print(result)
+except:
+    print("denominator cannot be zero")
+finally:
+    print("This is finally block...")
+    
+#try and multiple except
+try:
+    even=[2,4,6,8]
+    print(even[4])
+except ZeroDivisionError:
+    print("denominator cannot be zero")
+except IndexError:
+    print("Index out of bound")
