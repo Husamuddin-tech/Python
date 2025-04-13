@@ -1,0 +1,4 @@
+words=str(input("Enter Words :"))
+count=words.split()
+print("The Total Words From Given Input is ",len(count))
+
