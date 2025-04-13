@@ -1,0 +1,13 @@
+n = int(input("Enter no of values: "))
+i = 0
+while i < n:
+    m = int(input("enter the decimal no: "))
+    factor=1
+    binary=0
+    while m>0:
+        rem = m%2
+        binary += rem*factor
+        m//=2
+        factor*=10
+    print("The binary is: ",binary)
+    i+=1
