@@ -1,0 +1,20 @@
+#Asserstion
+#a = "Hello"
+#assert x == "Good Bye", "x should be Hello"
+
+#User defined exception
+#class EmptyError(BaseException):
+    #def __init__(self,argument):
+        #self.argument = argument
+        
+#var=""
+#try:
+    #raise EmptyError("The Variable is Empty")
+#except(EmptyError,var):
+    #print(var.argument)
+
+#Raise exception using raise keyword
+
+x=-1
+if x<0:
+    raise Exception("Sorry! No numbers below 0...")
