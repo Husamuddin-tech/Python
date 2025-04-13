@@ -1,0 +1,10 @@
+for i in range(100,1001):
+    temp=i
+    total=0
+    for j in range(i):
+        digit=temp%10 
+        total+=digit**3
+        temp//=10 
+    if total==i:
+        print('the armstrong number between 100 and thousand are: ',total)
+
