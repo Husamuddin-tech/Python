@@ -1,0 +1,8 @@
+a = 10
+b = "Husamuddin"
+c = 10
+d = 1
+print(int(a))
+print(b)
+print(float(c))
+print(complex(d))
