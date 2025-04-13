@@ -1,0 +1,42 @@
+a=int(input('enter a value: '))
+b=int(input('enter a value: '))
+def addition(a,b):
+    c=a+b
+    print('addition of',a,b ,'is',c)
+def substraction(a,b):
+    c=a-b
+    print('substraction of',a,b,'is',c)
+def multiplication(a,b):
+    c=a*b 
+    print('multiplication of',a,b,'is',c)
+def division(a,b):
+    c=a/b
+    print('division of',a,b,'is',c)
+def modular(a,b):
+    c=a%b
+    print('modular division of',a,b,'is',c)
+def exponentiation(a,b):
+    c=a**b 
+    print('exponentiation of ',a,b,'is',c)
+def floor(a,b):
+    c=a//b 
+    print('floor division of ',a,b,'is',c)
+while True :
+    n=int(input('1.addition\n2.substraction\n3.multiplication\n4.division\n5.modular division\n6.exponentiation\n7.floor division\n'))
+
+    if n==1:
+        addition(a,b)
+    elif n==2:
+        substraction(a,b)
+    elif n==3:
+        multiplication(a,b)
+    elif n==4:
+        division(a,b)
+    elif n==5:
+        modular(a,b)
+    elif n==6:
+        exponentiation(a,b)
+    elif n==7:
+        floor(a,b)
+    else:
+        print('invalid choice')
