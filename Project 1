@@ -1,0 +1,26 @@
+# Snake, Water, Gun Game
+
+import random
+'''
+0 is for gun
+1 is for snake
+2 is for water
+'''
+
+computer = random.choice([0, 1, 2])
+yourOption = input("Enter your choice (gun/snake/water): ")
+youDict = {"g" : 0, "s": 1, "w": 2}
+revDict = {0: "gun", 1: "snake", 2: "water"}
+
+you = youDict[yourOption]
+print(f"You chose: {revDict[you]}\nComputer chose: {revDict[computer]}")
+
+if (computer == 0 and you == 1) or (computer == 1 and you == 2) or (computer == 2 and you == 0):
+    print("You lose!")
+
+elif (you == 0 and computer == 1) or (you == 1 and computer == 2) or (you == 2 and computer == 0):
+    print("You win!")
+else:
+    print("It's a tie!")
+print("Thanks for playing!")
+# End of game
